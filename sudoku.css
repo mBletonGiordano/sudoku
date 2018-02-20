@@ -1,0 +1,73 @@
+
+.number_cellule
+{
+  display: inline-block;
+  position: relative;
+  border: 1px solid #ddd;
+  background: white;
+  max-width: 11.11111%;
+}
+
+.number_cellule input {
+  background: none;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 2em;
+  max-width: 100%;
+  height: 2em;
+  border: 0;
+  position: relative;
+}
+
+/*LIGNE HORIZONTALE*/
+.number_cellule:nth-of-type(3n)
+{
+  border-right-width: 2px;
+  border-right-color: black;
+}
+.number_cellule:nth-of-type(9n+1)
+{
+  border-left-width: 2px;
+  border-left-color: black;
+}
+
+
+/*LIGNE vertical*/
+.number_cellule:nth-child(-n+9)
+{
+  border-top-width: 2px;
+  border-top-color: black;
+}
+.number_cellule:nth-of-type(n+28):nth-of-type(-n+36)
+{
+  border-top-width: 2px;
+  border-top-color: black;
+}
+.number_cellule:nth-of-type(n+55):nth-of-type(-n+63)
+{
+  border-top-width: 2px;
+  border-top-color: black;
+}
+.number_cellule:nth-of-type(n+73):nth-of-type(-n+83)
+{
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
+
+body.grid
+{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: block;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+}
